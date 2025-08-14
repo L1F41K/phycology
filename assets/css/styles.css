@@ -221,7 +221,7 @@ body {
 	content: '';
 	position: absolute;
 	inset: 0;
-	background: url('/assets/img/kubok-po-knige.jpg') center/cover no-repeat;
+	background: url('assets/img/kubok-po-knige.jpg') center/cover no-repeat;
 	transform: scaleX(-1); /* горизонтальное зеркало */
 	z-index: -2;
 	-webkit-mask-image: linear-gradient(
@@ -338,7 +338,7 @@ body {
 /* My Profession */
 .my_profession {
 	position: relative;
-	background-image: url('/assets/img/krupnym-planom-sosredotoceny-vystrel-iz-vetvi-psenicy-s-arkim-fonom.jpg'); /* Replace with your image path */
+	background-image: url('assets/img/krupnym-planom-sosredotoceny-vystrel-iz-vetvi-psenicy-s-arkim-fonom.jpg'); /* Replace with your image path */
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed; /* Optional: makes background fixed on scroll */
@@ -381,7 +381,7 @@ body {
 /* Quotes */
 .quotes {
 	position: relative;
-	background-image: url('/assets/img/zakat-i-tuman-na-ozere.jpg'); /* Replace with your image path */
+	background-image: url('assets/img/zakat-i-tuman-na-ozere.jpg'); /* Replace with your image path */
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed; /* Optional: makes background fixed on scroll */
@@ -536,7 +536,7 @@ body {
 /* Sertificates */
 .sertificates {
 	position: relative;
-	background-image: url('/assets/img/3d-peizaz-s-balansiruusei-gal-koi-v-okeane.jpg'); /* Replace with your image path */
+	background-image: url('assets/img/3d-peizaz-s-balansiruusei-gal-koi-v-okeane.jpg'); /* Replace with your image path */
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed; /* Optional: makes background fixed on scroll */
@@ -663,7 +663,7 @@ body {
 /* Price */
 .price {
 	position: relative;
-	background-image: url('/assets/img/krasivye-rozovye-cvety-spa-na-goracih-kamnah-spa-na-fone-vlaznoi-vody-bokovaa-kompozicia-kopirovanie-prostranstva-koncepcia-kurorta-temnyi-fon.jpg'); /* Replace with your image path */
+	background-image: url('assets/img/krasivye-rozovye-cvety-spa-na-goracih-kamnah-spa-na-fone-vlaznoi-vody-bokovaa-kompozicia-kopirovanie-prostranstva-koncepcia-kurorta-temnyi-fon.jpg'); /* Replace with your image path */
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed; /* Optional: makes background fixed on scroll */
@@ -838,7 +838,7 @@ body {
 /* Contacts */
 .contacts {
 	position: relative;
-	background-image: url('/assets/img/siluet-travy-vo-vrema-zakata.jpg');
+	background-image: url('assets/img/siluet-travy-vo-vrema-zakata.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed; /* Optional: makes background fixed on scroll */
