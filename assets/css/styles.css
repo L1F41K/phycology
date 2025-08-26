@@ -353,7 +353,7 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(247, 237, 223, 0.7); /* Darkening overlay with 50% opacity */
+	background: rgba(255, 230, 195, 0.8); /* Darkening overlay with 50% opacity */
 	z-index: 1;
 }
 .my_profession-title {
@@ -396,7 +396,7 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(255, 230, 195, 0.7); /* Darkening overlay with 50% opacity */
+	background: rgba(255, 230, 195, 0.9); /* Darkening overlay with 50% opacity */
 	z-index: 1;
 }
 .quotes_text {
@@ -416,12 +416,7 @@ body {
 }
 /* Help */
 .help {
-	background: #fff3eb;
-	background: linear-gradient(
-		180deg,
-		rgba(255, 243, 235, 1) 0%,
-		rgba(253, 228, 206, 1) 100%
-	);
+	background: #f7eddf;
 }
 .help .container {
 	max-width: 1200px;
@@ -556,12 +551,7 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(
-		255,
-		230,
-		195,
-		0.75
-	); /* Darkening overlay with 50% opacity */
+	background: rgba(255, 230, 195, 0.9); /* Darkening overlay with 50% opacity */
 	z-index: 1;
 }
 .sertificates-title {
@@ -625,7 +615,7 @@ body {
 
 /* Methods */
 .methods {
-	background-color: #ffdcc0;
+	/* background-color: #f7eddf; */
 }
 .methods-title {
 	text-align: center;
@@ -643,8 +633,40 @@ body {
 	gap: 50px;
 	margin-top: 50px;
 }
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+.dropbtn {
+	cursor: pointer;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f7eddf;
+	min-width: 200px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	padding: 10px;
+	border-radius: 10px; /* Rounded corners */
+	overflow: hidden;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+	animation: slideDown 0.3s ease-out; /* Slide-down animation */
+}
+@keyframes slideDown {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
 .methods-left ul {
-	list-style: disc;
+	list-style: none;
 	max-width: 650px;
 }
 .methods-left ul li {
@@ -654,6 +676,15 @@ body {
 	font-weight: 600;
 	font-family: 'Cormorant Garamond';
 	margin-bottom: 30px;
+	display: flex;
+	align-items: center;
+}
+.methods-left ul li::before {
+	content: '•';
+	color: #1f1e1e;
+	font-size: 24px;
+	margin-right: 10px;
+	line-height: 1;
 }
 .methods-right img {
 	max-width: 500px;
@@ -679,7 +710,12 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(255, 230, 195, 0.7); /* Darkening overlay with 50% opacity */
+	background: rgba(
+		255,
+		230,
+		195,
+		0.95
+	); /* Darkening overlay with 50% opacity */
 	z-index: 1;
 }
 .price-title {
@@ -854,7 +890,12 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(255, 230, 195, 0.7); /* Darkening overlay with 50% opacity */
+	background: rgba(
+		255,
+		230,
+		195,
+		0.95
+	); /* Darkening overlay with 50% opacity */
 	z-index: 1;
 }
 .contacts-title,
