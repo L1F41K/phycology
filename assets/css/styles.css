@@ -305,6 +305,35 @@ body {
 	font-size: 50px;
 	color: #1f1e1e;
 }
+.about-me-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.about-me-img {
+	position: relative;
+}
+.about-me-img img {
+	max-width: 450px;
+	max-height: 400px;
+	width: 100%;
+	height: 100%;
+	border-radius: 30%;
+	position: relative;
+}
+
+.about-me-img::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.4);
+	border-radius: 30%;
+	pointer-events: none;
+}
+
 .about_me .container,
 .my_way .container,
 .methods .container,
@@ -316,12 +345,14 @@ body {
 	margin: 0 auto;
 	padding: 100px 20px;
 }
-.about-me-text,
-.my_way-text {
-	margin-top: 40px;
+.about-me-wrapper {
+	margin-top: 50px;
 }
 .second_svg {
 	display: none;
+}
+.about-me-text {
+	max-width: 700px;
 }
 .about-me-text p,
 .my_way-text p {
@@ -333,7 +364,7 @@ body {
 .about-me-title-wrapper svg {
 	position: absolute;
 	top: 44px;
-	left: 400px;
+	left: 350px;
 }
 /* My Profession */
 .my_profession {
@@ -377,6 +408,31 @@ body {
 }
 .my_way-title {
 	text-align: center;
+}
+.my_way-img {
+	position: relative;
+}
+.my_way-text {
+	max-width: 700px;
+}
+.my_way-img img {
+	max-width: 450px;
+	max-height: 400px;
+	width: 100%;
+	height: 100%;
+	border-radius: 30%;
+	position: relative;
+}
+.my_way-img::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.4);
+	border-radius: 30%;
+	pointer-events: none;
 }
 /* Quotes */
 .quotes {
@@ -787,6 +843,7 @@ body {
 	position: relative;
 	width: 100%; /* Full width of the parent */
 	overflow: hidden; /* Prevents overflow */
+	padding: 50px 0;
 }
 
 .my_rules-bg {
@@ -820,6 +877,7 @@ body {
 	gap: 40px 25px;
 	margin-top: 95px;
 }
+
 .my_rules .container {
 	position: relative;
 	margin: 0 auto;
@@ -905,100 +963,65 @@ body {
 }
 .contacts-wrapper {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	gap: 30px;
+	margin-top: 50px;
 }
-.contacts-right img {
-	max-width: 400px;
-	width: 100%;
-	border-radius: 30px;
+.contact-quote {
+	max-width: 360px;
 }
-.contacts-left-text {
-	max-width: 465px;
-}
-.contacts-left-text p {
+.contact-quote p {
 	text-align: left;
-	vertical-align: middle;
 	color: #1f1e1e;
-	font-size: 24px;
-	font-family: 'Cormorant Garamond', Arial, sans-serif;
-	line-height: 1.2;
+	font-size: 30px;
+	font-family: 'Cormorant Garamond';
 	font-weight: 600;
-	background-position: center center;
-	border-color: transparent;
-	border-style: solid;
+	line-height: 1.2;
+	font-style: italic;
 }
-.contacts-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto auto;
-	gap: 40px 0;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 20px;
+.contact-img img {
+	max-width: 370px;
+	border-radius: 170px 0px 120px 120px;
+}
+.contact-button {
+	text-align: left;
 	margin-top: 70px;
 }
-
-.contacts-icon,
-.contacts-button,
-.contacts-phone {
-	display: flex;
-	align-items: center;
-	padding: 0 20px;
+.contact-button a svg {
+	transition: transform 0.4s ease;
 }
-
-.contacts-icon {
-	gap: 10px;
-	font-size: 24px;
-	font-family: 'Cormorant Garamond', Arial, sans-serif;
-	line-height: 1.2;
-	font-weight: 600;
+.contact-button p {
+	text-align: left;
 	color: #1f1e1e;
-	text-decoration: none;
-}
-
-.contacts-icon svg {
-	max-width: 25px;
-	max-height: 25px;
-}
-
-.contacts-phone a {
-	font-size: 20px;
-	font-family: 'Raleway', Arial, sans-serif;
-	line-height: 1.2;
+	font-size: 18px;
 	font-weight: 500;
+	line-height: 1.2;
+	font-style: italic;
+	margin-top: 15px;
+}
+.contact-button a:hover svg {
+	transform: scale(1.15);
+	/* Плавная анимация */
+}
+.contacts-right {
+	margin-top: 350px;
+	margin-left: 40px;
+}
+.contacts-right-item {
 	color: #1f1e1e;
-	text-decoration: none;
+	text-align: left;
+	margin-bottom: 30px;
 }
-
-.contacts-button a {
-	font-size: 20px;
-	background-color: #0abab3;
-	border-radius: 10px;
-	padding: 15px 60px;
-	color: #f5f5f5;
-	font-family: 'Cormorant Garamond', Arial, sans-serif;
-	font-weight: 700;
-	display: inline-block;
-	text-decoration: none;
+.contacts-right-item p {
+	font-size: 14px;
+	color: #6e6a6a;
+	font-weight: 500;
+	margin-bottom: 10px;
 }
-
-/* Positioning elements in the 2x2 grid */
-.telegram {
-	grid-column: 1 / 2;
-	grid-row: 1 / 2;
+.contacts-right-item a {
+	font-weight: 500;
 }
-.whatsapp {
-	grid-column: 2 / 3;
-	grid-row: 1 / 2;
-}
-.phone {
-	grid-column: 1 / 2;
-	grid-row: 2 / 3;
-}
-.signup {
-	grid-column: 2 / 3;
-	grid-row: 2 / 3;
+.contacts-left {
+	margin-top: 70px;
 }
 /* Footer */
 .footer {
@@ -1169,7 +1192,15 @@ body {
 	.contact-info {
 		margin-top: 30px;
 	}
-
+	.about-me-wrapper {
+		flex-direction: column;
+		gap: 50px;
+	}
+	.about-me-img img {
+		max-width: 900px;
+		max-height: 450px;
+		object-fit: unset;
+	}
 	.phone-link a {
 		color: #f0e9df;
 		font-size: 22px;
@@ -1204,6 +1235,15 @@ body {
 		font-weight: 600;
 		font-family: 'Cormorant Garamond';
 		text-decoration: none;
+	}
+	.contacts-wrapper {
+		flex-direction: column;
+		align-items: center;
+		gap: 50px;
+	}
+	.contacts-right,
+	.contacts-left {
+		margin: 0;
 	}
 }
 @media (max-width: 978px) {
@@ -1303,6 +1343,14 @@ body {
 	.landing-screen-right-img img {
 		max-height: 500px;
 	}
+	.about-me-title-wrapper svg.second_svg {
+		left: 28%;
+	}
+}
+@media (max-width: 760px) {
+	.about-me-title-wrapper svg.second_svg {
+		left: 25%;
+	}
 }
 @media (max-width: 670px) {
 	.landing-screen-line {
@@ -1390,6 +1438,14 @@ body {
 	.landing-screen {
 		padding-bottom: 10px;
 	}
+	.about-me-title-wrapper svg.second_svg {
+		left: 20%;
+	}
+}
+@media (max-width: 540px) {
+	.about-me-title-wrapper svg.second_svg {
+		left: 17%;
+	}
 }
 @media (max-width: 500px) {
 	.about-me-title-wrapper svg.second_svg {
@@ -1449,6 +1505,10 @@ body {
 		font-size: 16px;
 		padding: 10px 30px;
 	}
+	.about-me-title-wrapper svg.second_svg {
+		left: 15%;
+		top: 54px;
+	}
 }
 @media (max-width: 440px) {
 	.methods-title svg,
@@ -1504,5 +1564,9 @@ body {
 	.sertificates-title svg,
 	.help-title svg {
 		width: 260px;
+	}
+	.about-me-title-wrapper svg.second_svg {
+		left: 5%;
+		top: 54px;
 	}
 }
