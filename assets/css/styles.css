@@ -150,6 +150,12 @@ body {
 	padding: 10px 0;
 	max-width: 1200px;
 }
+.header-line li a {
+	transition: all 0.3s ease;
+}
+.header-line li a:hover {
+	color: #2cf9f2;
+}
 .header-wrapper {
 	text-align: center; /* центрируем */
 }
@@ -279,6 +285,12 @@ body {
 	max-width: 600px;
 	max-height: 600px;
 	border-radius: 20px;
+}
+.landing-screen-left-button a {
+	transition: all 0.3s ease;
+}
+.landing-screen-left-button a:hover {
+	background-color: #06d4ce;
 }
 /* About me */
 .about-me-title {
@@ -747,6 +759,11 @@ body {
 	max-height: 700px;
 	border-radius: 25px;
 }
+.methods-subtitle p {
+	text-align: center;
+	margin-top: 20px;
+	opacity: 0.5;
+}
 /* Price */
 .price {
 	position: relative;
@@ -829,6 +846,10 @@ body {
 	font-weight: 700;
 	margin-top: 20px;
 	display: inline-block;
+	transition: all 0.3s ease;
+}
+.price-card-button a:hover {
+	background-color: #06d4ce;
 }
 /* My rules */
 
